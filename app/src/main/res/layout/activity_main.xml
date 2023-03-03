@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="#5D14C6"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
@@ -11,23 +12,27 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="25dp"
-        android:background="@color/card_foreground"
+        android:background="@color/purple_500"
         app:cardCornerRadius="25dp"
         android:elevation="20dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
+            android:background="#542C9A"
             android:layout_height="match_parent">
+
+
 
             <ImageView
                 android:id="@+id/profile_image"
                 android:layout_width="@dimen/profile_image_size"
                 android:layout_height="@dimen/profile_image_size"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="44dp"
+                android:src="@drawable/avatar_10"
                 app:layout_constraintEnd_toEndOf="parent"
-                android:layout_marginTop="60dp"
-                android:src="@drawable/avatar_9"/>
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/profile_name"
@@ -37,9 +42,9 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 android:layout_marginTop="50dp"
-                tools:text="First Last"
+                tools:text="Darshan Neupane"
                 android:textSize="24sp"
-                android:textColor="@color/black"
+                android:textColor="#1E7197"
                 android:textStyle="bold"
                 android:textAllCaps="true"/>
 
@@ -47,12 +52,14 @@
                 android:id="@+id/profile_bio"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_constraintTop_toBottomOf="@id/profile_name"
-                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="28dp"
+                android:text="Hello! I am from New York. I am a second year CS Major. My Goal is to learn how to build an app by the end of this course."
+                android:textColor="#FF5722"
+                android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                android:layout_marginTop="10dp"
-                android:text="@string/profile_bio_text"
-                android:textSize="16sp"/>
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/profile_name" />
 
             <TextView
                 android:id="@+id/profile_hobby_header"
@@ -62,42 +69,45 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 android:layout_marginTop="50dp"
-                android:text="@string/profile_hobby_header_text"
-                android:textSize="18sp"
+                android:text="Favorite Hobbies"
+                android:textSize="20sp"
                 android:textColor="@color/black"/>
 
             <TextView
                 android:id="@+id/profile_hobby_first"
                 android:layout_width="wrap_content"
+                android:textColor="#000405"
                 android:layout_height="wrap_content"
                 app:layout_constraintTop_toBottomOf="@id/profile_hobby_header"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 android:layout_marginTop="10dp"
-                android:text="@string/profile_hobby_first_text"
-                android:textSize="15sp"/>
+                android:text="🏊🏼‍ Swimming"
+                android:textSize="17sp"/>
 
             <TextView
                 android:id="@+id/profile_hobby_second"
                 android:layout_width="wrap_content"
+                android:textColor="#000000"
                 android:layout_height="wrap_content"
                 app:layout_constraintTop_toBottomOf="@id/profile_hobby_first"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 android:layout_marginTop="5dp"
-                android:text="@string/profile_hobby_second_text"
-                android:textSize="15sp"/>
+                android:text="🏐 Volleyball 🏐"
+                android:textSize="17sp"/>
 
             <TextView
                 android:id="@+id/profile_hobby_third"
                 android:layout_width="wrap_content"
+                android:textColor="#000000"
                 android:layout_height="wrap_content"
                 app:layout_constraintTop_toBottomOf="@id/profile_hobby_second"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 android:layout_marginTop="5dp"
-                android:text="@string/profile_hobby_third_text"
-                android:textSize="15sp"/>
+                android:text="🎥 Movie"
+                android:textSize="17sp"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
